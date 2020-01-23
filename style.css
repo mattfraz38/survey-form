@@ -1,0 +1,60 @@
+/* -------------------------------------
+              BASIC SETUP 
+-------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html {
+  background-color: #fff;
+  color: #303030;
+  font-family: 'Roboto Condensed', 'Calibri', 'Arial';
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+/* -------------------------------------
+              FORM TITLES 
+-------------------------------------*/
+
+.form-heading, h1 p {
+  text-align: center;
+}
+
+.form-heading h1 {
+ margin-top: 100px;
+}
+
+.form-heading p {
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+/* -------------------------------------
+        FORM AND FORM CONTAINER 
+-------------------------------------*/
+
+.container {
+  border: 1px solid #555;
+  background-color: rgba(200, 200, 200, 0.5);
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input[type=text],
+input[type=email] {
+  opacity: 0.6;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
