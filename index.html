@@ -11,62 +11,93 @@
   <body>
     <!-- FORM HEADINGS -->
     <div class="form-heading">
-      <h1>Web Development Survey</h1>
-      <p>Looking for a change? Potential job offers await!</p>
+      <h1 id="title">Web Development Survey</h1>
+      <p id="description">Looking for a change? Potential job offers await!</p>
     </div>
     <!-- FORM CONTAINER AND CONTENT -->
-    <form action="post" class="submission-form">
+    <form action="post" id="survey-form">
       <!-- NAME - EMAIL - AGE -->
-      <label for="name">Name</label>
-      <input id="name" type="text" placeholder="Enter your name">
-      <label for="email">Email</label>
-      <input id="email" type="email" placeholder="Enter your email" required>
-      <label for="age">Age</label>
-      <input id="age" type="text" placeholder="Age">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" min="18" max="50" placeholder="Enter your age">
+      </div>
       <!-- CURRENT ROLE -->
-      <label for="role">Which best describes your current status?</label>
-      <select name="role" id="role">
-        <option value="#" selected>Select Working Status</option>
-        <option value="student">Student</option>
-        <option value="full">Full Time Worker</option>
-        <option value="part">Part Time Worker</option>
-        <option value="pass">Prefer Not to Say</option>
-        <option value="other">Other</option>
-      </select>
+      <div class="form-group">
+        <label for="dropdown">Which best describes your current status?</label>
+        <select name="role" id="dropdown">
+          <option value="#" selected>Select Working Status</option>
+          <option value="student">Student</option>
+          <option value="full">Full Time Worker</option>
+          <option value="part">Part Time Worker</option>
+          <option value="pass">Prefer Not to Say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
       <!-- INTEREST -->
-      <p>Would you like to hear about potential job offers?</p>
-      <label for="absolutely">Absolutely!</label>
-      <input id="absolutely" name="interest" value="yes" type="radio">
-      <label for="maybe">Maybe</label>
-      <input id="maybe" name="interest" value="maybe" type="radio">
-      <label for="no">No thanks</label>
-      <input id="no" name="interest" value="no" type="radio">
+ 
+          <div class="form-group">
+            <p>Would you like to hear about potential job offers?</p>
+            <label for="absolutely">Absolutely!</label>
+            <input id="absolutely" name="interest" value="yes" type="radio">
+          </div>
+          <div class="form-group">
+            <label for="maybe">Maybe</label>
+            <input id="maybe" name="interest" value="maybe" type="radio">
+          </div>
+          <div class="form-group">
+            <label for="no">No thanks</label>
+            <input id="no" name="interest" value="no" type="radio">
+          </div>
+
+      <!-- </div> -->
       <!-- EXPERIENCE -->
-      <label for="experience">How much development experience do you have?</label>
-      <select name="experience" id="experience" required>
-        <option value="#">Years of Experience</option>
-        <option value="0-1">0-1</option>
-        <option value="2-3">2-3</option>
-        <option value="4-5">4-5</option>
-        <option value="5+">5+</option>
-      </select>
+      <div class="form-group">
+      <label for="dropdown">How much development experience do you have?</label>
+        <select name="experience" id="dropdown" required>
+          <option value="#">Years of Experience</option>
+          <option value="0-1">0-1</option>
+          <option value="2-3">2-3</option>
+          <option value="4-5">4-5</option>
+          <option value="5+">5+</option>
+        </select>
+      </div>
       <!-- POSITION SEARCH TYPE -->
-      <p>What positions are you most interested in?</p>
-      <label for="UI/UX">UI/UX</label>
-      <input id="UI/UX" name="position" value="UI/UX" type="checkbox">
-      <label for="Front-end">Front-end</label>
-      <input id="Front-end" name="position" value="Front-end" type="checkbox">
-      <label for="Back-end">Back-end</label>
-      <input id="Back-end" name="position" value="Back-end" type="checkbox">
-      <label for="Full-stack">Full stack</label>
-      <input id="Full-stack" name="position" value="Full stack" type="checkbox">
-      <label for="Other">Other</label>  
-      <input id="Other" name="position" value="Other" type="checkbox">
+      <div class="form-group">
+        <p>What positions are you most interested in?</p>
+        <label for="UI/UX">UI/UX</label>
+        <input id="UI/UX" name="position" value="UI/UX" type="checkbox">
+      </div>
+      <div class="form-group">
+        <label for="Front-end">Front-end</label>
+        <input id="Front-end" name="position" value="Front-end" type="checkbox">
+      </div>
+      <div class="form-group">
+        <label for="Back-end">Back-end</label>
+        <input id="Back-end" name="position" value="Back-end" type="checkbox">
+      </div>
+      <div class="form-group">
+        <label for="Full-stack">Full stack</label>
+        <input id="Full-stack" name="position" value="Full stack" type="checkbox">
+      </div>
+      <div class="form-group">
+        <label for="Other">Other</label>  
+        <input id="Other" name="position" value="Other" type="checkbox">
+      </div>
       <!-- ADDITIONAL INFORMATION -->
+      <div class="form-group">
       <label for="comments">We'd love ot hear more about you!</label>
       <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Additional comments here"></textarea>
       <!-- FORM SUBMITTION -->
-      <input type="submit" value="Submit">
+      <input id="submit" type="submit" value="Submit">
+      </div>
     </form>
   </body>
 </html>
