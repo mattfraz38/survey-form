@@ -15,79 +15,58 @@
       <p>Looking for a change? Potential job offers await!</p>
     </div>
     <!-- FORM CONTAINER AND CONTENT -->
-    <div class="container">
-      <form action="post">
-        <!-- NAME - EMAIL - AGE -->
-        <div class="contact-info">
-          <div class="contact-name">
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Enter your name">
-          </div>
-          <div class="contact-email">
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Enter your email" required>
-          </div>
-          <div class="contact-age">
-            <label for="age">Age</label>
-            <input id="age" type="text" placeholder="Age">
-          </div>
-        </div>
-        <!-- CURRENT ROLE -->
-        <div class="employment-status">
-          <label for="role">Which best describes your current status?</label>
-          <select name="role" id="role">
-            <option value="#" selected>Select Working Status</option>
-            <option value="student">Student</option>
-            <option value="full">Full Time Worker</option>
-            <option value="part">Part Time Worker</option>
-            <option value="pass">Prefer Not to Say</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-        <!-- INTEREST -->
-        <div class="job-interest">
-          <p>Would you like to hear about potential job offers?</p>
-          <label for="absolutely">Absolutely!</label>
-          <input id="absolutely" name="interest" value="yes" type="radio">
-          <label for="maybe">Maybe</label>
-          <input id="maybe" name="interest" value="maybe" type="radio">
-          <label for="no">No thanks</label>
-          <input id="no" name="interest" value="no" type="radio">
-        </div>
-        <!-- EXPERIENCE -->
-        <div class="experience">
-          <label for="experience">How much development experience do you have?</label>
-          <select name="experience" id="experience" required>
-            <option value="#">Years of Experience</option>
-            <option value="0-1">0-1</option>
-            <option value="2-3">2-3</option>
-            <option value="4-5">4-5</option>
-            <option value="5+">5+</option>
-          </select>
-        </div>
-        <!-- POSITION SEARCH TYPE -->
-        <div class="position-type">
-          <p>What positions are you most interested in?</p>
-          <label for="UI/UX">UI/UX</label>
-          <input id="UI/UX" name="position" value="UI/UX" type="checkbox">
-          <label for="Front-end">Front-end</label>
-          <input id="Front-end" name="position" value="Front-end" type="checkbox">
-          <label for="Back-end">Back-end</label>
-          <input id="Back-end" name="position" value="Back-end" type="checkbox">
-          <label for="Full-stack">Full stack</label>
-          <input id="Full-stack" name="position" value="Full stack" type="checkbox">
-          <label for="Other">Other</label>  
-          <input id="Other" name="position" value="Other" type="checkbox">
-        </div>
-        <!-- ADDITIONAL INFORMATION -->
-        <div class="additional-info">
-          <label for="comments">We'd love ot hear more about you!</label>
-          <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Additional comments here"></textarea>
-          <!-- FORM SUBMITTION -->
-          <div class="form-submit">
-            <button>Submit</button>
-          </div>
-      </form>
-    </div>
+    <form action="post" class="submission-form">
+      <!-- NAME - EMAIL - AGE -->
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+      <label for="age">Age</label>
+      <input id="age" type="text" placeholder="Age">
+      <!-- CURRENT ROLE -->
+      <label for="role">Which best describes your current status?</label>
+      <select name="role" id="role">
+        <option value="#" selected>Select Working Status</option>
+        <option value="student">Student</option>
+        <option value="full">Full Time Worker</option>
+        <option value="part">Part Time Worker</option>
+        <option value="pass">Prefer Not to Say</option>
+        <option value="other">Other</option>
+      </select>
+      <!-- INTEREST -->
+      <p>Would you like to hear about potential job offers?</p>
+      <label for="absolutely">Absolutely!</label>
+      <input id="absolutely" name="interest" value="yes" type="radio">
+      <label for="maybe">Maybe</label>
+      <input id="maybe" name="interest" value="maybe" type="radio">
+      <label for="no">No thanks</label>
+      <input id="no" name="interest" value="no" type="radio">
+      <!-- EXPERIENCE -->
+      <label for="experience">How much development experience do you have?</label>
+      <select name="experience" id="experience" required>
+        <option value="#">Years of Experience</option>
+        <option value="0-1">0-1</option>
+        <option value="2-3">2-3</option>
+        <option value="4-5">4-5</option>
+        <option value="5+">5+</option>
+      </select>
+      <!-- POSITION SEARCH TYPE -->
+      <p>What positions are you most interested in?</p>
+      <label for="UI/UX">UI/UX</label>
+      <input id="UI/UX" name="position" value="UI/UX" type="checkbox">
+      <label for="Front-end">Front-end</label>
+      <input id="Front-end" name="position" value="Front-end" type="checkbox">
+      <label for="Back-end">Back-end</label>
+      <input id="Back-end" name="position" value="Back-end" type="checkbox">
+      <label for="Full-stack">Full stack</label>
+      <input id="Full-stack" name="position" value="Full stack" type="checkbox">
+      <label for="Other">Other</label>  
+      <input id="Other" name="position" value="Other" type="checkbox">
+      <!-- ADDITIONAL INFORMATION -->
+      <label for="comments">We'd love ot hear more about you!</label>
+      <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Additional comments here"></textarea>
+      <!-- FORM SUBMITTION -->
+      <input type="submit" value="Submit">
+    </form>
   </body>
 </html>
