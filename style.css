@@ -9,7 +9,10 @@
 }
 
 html {
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/road.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #303030;
   font-family: 'Roboto Condensed', 'Calibri', 'Arial';
   font-size: 20px;
@@ -22,6 +25,7 @@ html {
 
 .form-heading, h1 p {
   text-align: center;
+  color: #fff;
 }
 
 .form-heading h1 {
@@ -36,7 +40,7 @@ html {
 }
 
 /* -------------------------------------
-        FORM AND FORM CONTAINER 
+    FORM CONTAINER AND FORM ELEMENTS
 -------------------------------------*/
 
 #survey-form {
@@ -45,6 +49,7 @@ html {
   padding: 40px;
   border: 1px solid #555;
   border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 label {
@@ -75,4 +80,20 @@ textarea {
 .form-group {
   margin: 0 auto 7px auto;
   padding: 5px;
+}
+
+/* -------------------------------------
+                BUTTON
+-------------------------------------*/
+
+#submit {
+  font-weight: 600;
+  color: #555;
+  background-color: #3ac23a;
+  border: 0;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #69fa69;
 }
